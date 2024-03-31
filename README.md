@@ -31,7 +31,7 @@ This project is implemented in R. To run the analysis, you will need:
 
 1. Download this repository as a zip file to your device.
 2. Un-zip the downloaded folder.
-3. open `Correlation_Exercise.Rproj` first to set the directory
+3. Open `Correlation_Exercise.Rproj` first to set the directory
 4. Open `Correlation_Exercise.Rmd` in RStudio.
 5. Run the Rmd file to reproduce the analysis and view the results.
 
