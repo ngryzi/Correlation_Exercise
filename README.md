@@ -33,3 +33,6 @@ This project is implemented in R. To run the analysis, you will need:
 2. open `Correlation_Exercise.Rproj` first to set the directory
 3. Open `Correlation_Exercise.Rmd` in RStudio.
 4. Run the Rmd file to reproduce the analysis and view the results.
+
+## Created By:
+Negar Yazdi [negarr.yazdi@gmail.com]
