@@ -4,17 +4,11 @@ This project performs a statistical analysis to estimate the correlation between
 
 ## Project Structure
 
+-`Correlation_Exercise.Rproj`: The RStudio project file to set the project directory as the working directory.
 - `Correlation_Exercise.Rmd`: The R Markdown document containing the analysis code, comments, and findings.
 - `linregdata.csv`: Dataset used in the analysis, containing three columns: Income (dollars), Age (years), and Education (years).
-- `Correlation_Exercise.docs`: The word output of the R Markdown document, presenting the analysis findings.
+- `Correlation_Exercise.docx`: The word output of the R Markdown document, presenting the findings.
 - `README.md`: This file, provides an overview of the project.
-
-## Data Description
-
-The dataset `linregdata.csv` includes 10 observations with the following variables:
-- **Income**: The income of the individual in dollars.
-- **Age**: The age of the individual in years.
-- **Education**: The years of education of the individual.
 
 ## Analysis Summary
 
@@ -22,6 +16,7 @@ The analysis involves calculating Pearson's correlation coefficient (r) to asses
 
 ## Results
 
+- A scatter plot with a regression line to show the trend between Income and Age.
 - Pearson's correlation coefficient (r): 0.779, indicating a strong positive linear relationship between Income and Age.
 - p-value: 0.008, suggesting that the correlation observed is statistically significant and not due to random chance.
 
@@ -30,10 +25,11 @@ The analysis involves calculating Pearson's correlation coefficient (r) to asses
 This project is implemented in R. To run the analysis, you will need:
 
 - R (version 3.6.0 or later)
-- RStudio (optional, but recommended for ease of use)
+- RStudio
 
 ## How to Run
 
-1. Clone this repository to your local machine.
-2. Open `Correlation_Exercise.Rmd` in RStudio or your preferred R environment.
-3. Run the Rmd file to reproduce the analysis and view the results.
+1. Copy this repository to a folder in your device.
+2. open `Correlation_Exercise.Rproj` first to set the directory
+3. Open `Correlation_Exercise.Rmd` in RStudio.
+4. Run the Rmd file to reproduce the analysis and view the results.
