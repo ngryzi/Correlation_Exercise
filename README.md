@@ -4,7 +4,7 @@ This project performs a statistical analysis to estimate the correlation between
 
 ## Project Structure
 
--`Correlation_Exercise.Rproj`: The RStudio project file to set the project directory as the working directory.
+- `Correlation_Exercise.Rproj`: The RStudio project file to set the project directory as the working directory.
 - `Correlation_Exercise.Rmd`: The R Markdown document containing the analysis code, comments, and findings.
 - `linregdata.csv`: Dataset used in the analysis, containing three columns: Income (dollars), Age (years), and Education (years).
 - `Correlation_Exercise.docx`: The word output of the R Markdown document, presenting the findings.
