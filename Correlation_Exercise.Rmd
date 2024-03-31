@@ -1,0 +1,57 @@
+---
+title: "Correlation_Exercise"
+author: "Negar Yazdi"
+date: "2024-03-31"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r,echo=FALSE, message=FALSE}
+# Load needed packages
+library(stats)
+library(readxl)
+library(ggplot2)
+```
+
+
+## Correlation Exercise
+
+```{r,echo=FALSE, message=FALSE}
+# Import Data
+data <- read.csv("linregdata.csv")
+```
+
+
+```{r,,echo=FALSE, message=FALSE}
+# Extract Income and Age columns
+income <- data$Income
+age <- data$Age
+```
+
+
+```{r,,echo=FALSE, message=FALSE}
+# Calculate Pearson's r and its p-value
+correlation_result <- cor.test(income, age)
+```
+# Results:
+```{r, echo=FALSE, message=FALSE}
+# Plot the scatter plot with the regression line
+corr_plot <- ggplot(data, aes(x = Age, y = Income)) +
+  geom_point() +                             
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Age (years)", y = "Income (dollars)", title = "Scatter Plot of Income vs. Age") +
+  theme_minimal()
+
+corr_plot
+```
+
+"Pearson's correlation coefficient (r): `r round(correlation_result$estimate,3)`", indicating a strong positive linear relationship between Income and Age.
+
+
+"p-value: `r round(correlation_result$p.value,3)`", suggesting that the correlation observed is statistically significant and not due to random chance.
+
+
